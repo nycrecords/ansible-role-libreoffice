@@ -1,6 +1,13 @@
 Ansible Role: LibreOffice
 =========================
 
+![GitHub](https://img.shields.io/github/license/nycrecords/ansible-role-libreoffice)
+[![Build Status](https://travis-ci.com/nycrecords/ansible-role-libreoffice.svg?branch=master)](https://travis-ci.com/nycrecords/ansible-role-libreoffice)
+[![Galaxy](https://img.shields.io/badge/galaxy-nycrecords.libreoffice-blue.svg)](https://galaxy.ansible.com/nycrecords/libreoffice)
+![Ansible](https://img.shields.io/ansible/role/d/45872)
+![Ansible](https://img.shields.io/ansible/quality/45872)
+
+
 A brief description of the role goes here.
 
 Requirements
