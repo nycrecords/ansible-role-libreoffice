@@ -1,0 +1,19 @@
+---
+# tasks file for ansible-role-libreoffice
+- name: include os-specific variables
+  include_vars: "{{ ansible_os_family }}-{{ ansible_distribution_version.split('.')[0] }}.yml"
+
+- name: Test
+  debug:
+    msg: "{{ libreoffice_package_name }}"
+
+- name: Install LibreOffice
+  yum:
+    name: "{{ libreoffice_package_name }}"
+  when: ansible_os_family == 'RedHat'
+
+- name: Add LibreOffice to PATH
+  template:
+    src: libreoffice.sh.j2
+    dest: /etc/profile.d/libreoffice.sh
+    mode: 0644
