@@ -15,6 +15,6 @@
     java_home: /usr/lib/jvm/java-1.8.0-openjdk.x86_64
 
   roles:
-    - role: nycrecords.rhsm
+    - role: nycrecords.yum_config_manager
     - role: nycrecords.java
     - role: ansible-role-libreoffice
